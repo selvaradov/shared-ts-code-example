@@ -1,0 +1,9 @@
+{
+  "name": "@example/server",
+  "version": "1.0.0",
+  "dependencies": {
+    "@example/common": "1.0.0"
+  },
+  "type": "module",
+  "main": "dist/foo.js"
+}
