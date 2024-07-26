@@ -45,7 +45,12 @@ The solution mentioned [here](https://stackoverflow.com/questions/63058081/packa
 and the linked documentation is very useful -- I think the reason the OP wasn't able to get it working
 is they didn't specify `paths` in their TypeScript `compilerOptions` configuration.
 
-[Claude](https://claude.ai) was not very helpful  
+[Claude](https://claude.ai) was not very helpful - it suggested things like doing
+`import { sharedFunction } from '../../common/src/sharedFile';`, or recommended
+compiling everything into a top-level `build` folder, and there
+kept being "ERR_MODULE_NOT_FOUND" & "ERR_UNSUPPORTED_DIR_IMPORT" at runtime,
+or "Cannot find module '@example/common' or its corresponding type declarations"
+when working with TypeScript.
 
 ## Other links
 - https://stackoverflow.com/questions/55753163/package-json-is-not-under-rootdir
